@@ -8,7 +8,7 @@ namespace CloudWeather.Temperature.DataAccess
 
         public TemperatureDbContext(DbContextOptions opts) : base(opts) { }
 
-        public DbSet<Temperature> Precipitation { get; set; }
+        public DbSet<Temperature> Temperature { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

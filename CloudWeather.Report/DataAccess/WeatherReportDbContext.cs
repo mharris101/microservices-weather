@@ -8,7 +8,7 @@ namespace CloudWeather.Report.DataAccess
 
         public WeatherReportDbContext(DbContextOptions opts) : base(opts) { }
 
-        public DbSet<WeatherReport> Precipitation { get; set; }
+        public DbSet<WeatherReport> WeatherReport { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
